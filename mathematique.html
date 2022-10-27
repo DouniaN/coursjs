@@ -11,7 +11,7 @@
       
 function chifoumiordi(){
 
-    let reponseordi = Math.floor(Math.random()*4);
+    let reponseordi = Math.floor(Math.random()*4+1);
     alert(reponseordi);
     let reponsej = prompt("A toi jouer");
     let reponse=0;
@@ -52,11 +52,11 @@ function chifoumiordi(){
    
     
 }
-for(let i=1 ;i<5;i++){
+for(let i=1 ;i<4;i++){
     chifoumiordi();
    if(i==3){
     alert("Résultat final:"+resultat);
-    return;
+    
    }
 }
 
