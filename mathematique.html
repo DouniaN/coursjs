@@ -11,7 +11,7 @@
       
 function chifoumiordi(){
 
-    let score = 0;
+    
 
     let reponseordi = Math.floor(Math.random()*4);
     alert(reponseordi);
@@ -51,18 +51,26 @@ function chifoumiordi(){
 
     }
     
+   
+    
+}
+for(let i=1 ;i<5;i++){
+    chifoumiordi();
+   if(i==3){
+    alert("Résultat final:"+resultat);
+   }
+}
+
+/*let score = 0;
+while(score < 5){
+    chifoumiordi();
     score++;
-
-
-
     if(score==3){
         alert("Resultat Final "+resultat);
         return;
     }
-    
-}
+}*/
 
-chifoumiordi();
 
 
  </script>
