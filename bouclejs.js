@@ -136,3 +136,67 @@
 	}
 
     console.log(chifoumiordi);
+
+/*************************Tableau*************************** */
+const passagers =["Dounia","Manal","Mama","Papa"];
+console.log(passagers[1]);
+
+for (let passager of passagers){
+    console.log("Le passeger est :"+passager);
+}
+
+for (let i in passagers){
+    console.log("Le passeger est :"+passagers[i]);
+}
+passagers.forEach(passager=>console.log("Le passegere est"+passager));
+
+//transoformer un tableau MAP
+
+//concat
+//filter
+//inclides
+//pop
+//slides
+//splice
+//push : ajoute les élements a la fin 
+//reverse ()
+
+/*************API************************************* */
+//await
+//async
+
+// Les boucles
+console.log("Les boucles");
+
+
+// FOR
+//  for( /* initialisation */ ; /* condition */ ;  incrémentation  ) {
+//   /* instructions à répeter */
+// }
+
+// let monNombre = 10
+// for (monNombre; monNombre <= 90; monNombre += 3) {
+// 	console.log("le nombre est : " + monNombre);
+// 	// if (monNombre === 52) {
+// 	// 	monNombre = 70
+// 	// }
+// }
+
+// WHILE
+const nombreDeSiegesDisponibles = 10
+let nombreDeSiegesOccupes = 0
+
+while(nombreDeSiegesOccupes <= nombreDeSiegesDisponibles) {
+	
+	console.log("Vous pouvez entrer dans la salle. Nombre de sièges restants : " + (nombreDeSiegesDisponibles - nombreDeSiegesOccupes))
+
+	nombreDeSiegesOccupes++
+
+}
+
+/****objet*** */
+
+
+
+
+
