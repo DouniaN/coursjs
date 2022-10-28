@@ -3,16 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <title>Exercice API js</title>
-</head>
-
-<body>
+    <script src="api.js"></script>
+   <style>
+     table, th, td {
+        border: 1px solid;
+      }
+   </style>
     
-<script>
-   (async() => {
-    const contenu = await fetch("https://data.nantesmetropole.fr/api/records/1.0/search/?dataset=244400404_stations-velos-libre-service-nantes-metropole-disponibilites&q=&facet=banking&facet=bonus&facet=status&facet=contract_name");
-    const contenuJson = await contenu.json()
-    console.log(contenuJson)
+</head>
+<!-- table for showing data -->
+<table id="films" ></table>
+<body>
+</body>   
 
-    })()
-
-</script>     
+</html>
+    
