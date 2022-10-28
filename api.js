@@ -15,18 +15,18 @@ function estAnagrame(stringA ,stringB){
     //Triez les deux chaînes.
     var s1 = stringA.split('').sort().join('');
     var s2 = stringB.split('').sort().join('');
-    console.log(s1)
-    console.log(s2)
 
     //Comparer les deux chaines 
     if(stringA===stringB){
         return true;
     }
+    else{
+        return false;
+    }
 }
 //Test function
 console.log(estAnagrame('abc','cba'));
-console.log(estAnagrame('créatif','réactif')); 
-console.log(estAnagrame('dog','doog'));
 
+  
 
 
