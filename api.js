@@ -23,8 +23,8 @@ console.log(contenuJson) ;
         </tr>`;  
         for(p of r.people){
             const contenu = await fetch(p);
-const contenuJson = await contenu.json()
-console.log(contenuJson) 
+            const contenuJson = await contenu.json()
+            console.log(contenuJson) 
         }
         
        
