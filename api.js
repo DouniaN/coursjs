@@ -1,9 +1,10 @@
 // Option fonction anonyme
 const data=(async() => {
-const contenu = await fetch("https://ghibliapi.herokuapp.com/films");
-const contenuJson = await contenu.json()
-console.log(contenuJson) ;
-
+  try{
+    const contenu = await fetch("https://ghibliapi.herokuapp.com/films");
+    const contenuJson = await contenu.json()
+    console.log(contenuJson) ;
+  } catch(e){console.log(e)}
 
     let tab = 
      `<tr>
@@ -22,7 +23,7 @@ console.log(contenuJson) ;
         <td>${r.description}</td>          
         </tr>`;  
         for(p of r.people){
-            const contenu = await fetch(p);
+            const personne = await fetch(p);
             const contenuJson = await contenu.json()
             console.log(contenuJson) 
         }
