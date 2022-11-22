@@ -9,12 +9,9 @@
         var s2 = stringB.split('').sort().join('');
 
         //Comparer les deux chaines 
-        if(stringA===stringB){
-            return true;
-        }
-        else{
-            return false;
-        }
+        
+        stringA===stringB ? return true : return false ;
+
     }
     //Test function
     console.log(estAnagrame('abc','cba'));
