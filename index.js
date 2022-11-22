@@ -20,3 +20,4 @@ app.get('/api/contacts', function (req, res) {
     res.status(200).json(contacts)
 })
   
+app.listen(3000)
